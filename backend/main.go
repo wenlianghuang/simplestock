@@ -31,7 +31,7 @@ func main() {
 	router.POST("/api/modify", ModifyHandler)
 	router.Static("/", "../frontend/build")
 	// 启动服务
-	router.Run(":8080")
+	router.Run(":7000")
 }
 
 func ModifyHandler(c *gin.Context) {
