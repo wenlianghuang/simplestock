@@ -1,6 +1,7 @@
 package main
 
 import (
+	"backend/savecontent"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
@@ -29,6 +30,7 @@ func main() {
 	})
 	// 設置路由
 	router.POST("/api/modify", ModifyHandler)
+	router.POST("/api/savecontent", savecontent.SaveContent)
 	router.Static("/", "../frontend/build")
 	// 启动服务
 	router.Run(":7000")

@@ -4,6 +4,8 @@ import HomePage from './HomePage';
 import Chart from './Chart';
 
 const App = () => {
+  
+
   return (
     <Router>
       <div>
