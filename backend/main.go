@@ -32,7 +32,7 @@ func main() {
 	router.POST("/api/modify", ModifyHandler)
 	router.POST("/api/savecontent", savecontent.SaveContent)
 	router.Static("/", "../frontend/build")
-	// 启动服务
+	// 啟動
 	router.Run(":7000")
 }
 
